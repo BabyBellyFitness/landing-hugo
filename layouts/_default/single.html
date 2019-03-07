@@ -1,0 +1,89 @@
+{{ define "styles" }}
+    {{ $travel := resources.Get "css/travel.css" }}
+    {{ $datepicker := resources.Get "css/datepicker.css" }}
+    {{ $interior := resources.Get "css/interior-design.css" }}
+    {{ $typewriter := resources.Get "css/typewriter.css" }}
+    {{ $restaurant := resources.Get "css/restaurant.css" }}
+    {{ $pricing := resources.Get "css/components/pricing-table.css" }}
+
+    {{ $pageStyles := slice $travel $datepicker $interior $typewriter $restaurant $pricing }}
+    {{ $pageBundle := $pageStyles | resources.Concat "css/pagebundle.css" }}
+    <link rel="stylesheet" href="{{ ($pageBundle | fingerprint).RelPermalink}}"  type="text/css" />
+
+    <style>
+
+        .pricing-tenure-switcher { position: relative; }
+
+        .pricing-tenure-switcher .pts-left,
+        .pricing-tenure-switcher .pts-right,
+        .pricing-tenure-switcher .pts-switcher {
+            display: inline-block;
+            margin: 0 10px;
+            height: 30px;
+            overflow: hidden;
+        }
+
+        .pricing-tenure-switcher .pts-left,
+        .pricing-tenure-switcher .pts-right {
+            font-size: 16px;
+            font-weight: 600;
+            color: #AAA;
+            line-height: 30px;
+        }
+
+        .pricing-tenure-switcher .pts-switch-active { color: #333; }
+
+        .pricing-tenure-switcher .pts-switcher label { margin-bottom: 0; }
+
+    </style>
+{{ end }}
+
+{{ define "scripts" }}
+    <script type="text/javascript">
+
+        jQuery(document).ready( function($){
+            $('#food-menu-carousel').owlCarousel({
+                animateIn: 'fadeIn',
+                animateOut: 'fadeOut',
+                items: 1,
+                mouseDrag: false,
+                dotsContainer: '#item-thumb',
+            });
+        });
+
+    </script>
+
+    <script>
+        jQuery(document).ready( function($){
+            function pricingSwitcher( elementCheck, elementParent, elementPricing ) {
+                elementParent.find('.pts-left,.pts-right').removeClass('pts-switch-active');
+                elementPricing.find('.pts-switch-content-left,.pts-switch-content-right').addClass('hidden');
+
+                if( elementCheck.filter(':checked').length > 0 ) {
+                    elementParent.find('.pts-right').addClass('pts-switch-active');
+                    elementPricing.find('.pts-switch-content-right').removeClass('hidden');
+                } else {
+                    elementParent.find('.pts-left').addClass('pts-switch-active');
+                    elementPricing.find('.pts-switch-content-left').removeClass('hidden');
+                }
+            }
+
+            $('.pts-switcher').each( function(){
+                var element = $(this),
+                    elementCheck = element.find(':checkbox'),
+                    elementParent = $(this).parents('.pricing-tenure-switcher'),
+                    elementPricing = $( elementParent.attr('data-container') );
+
+                pricingSwitcher( elementCheck, elementParent, elementPricing );
+
+                elementCheck.on( 'change', function(){
+                    pricingSwitcher( elementCheck, elementParent, elementPricing );
+                });
+            });
+        });
+    </script>
+{{ end }}
+
+{{ define "main" }}
+    {{.Content}}
+{{ end }}

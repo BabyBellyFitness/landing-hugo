@@ -1,0 +1,1324 @@
+/*Ipad, Ipad Pro und Desktop*/
+@media screen
+and (min-device-width: 768px) {
+
+    .display-aus
+    {
+        display: none;
+    }
+
+    .bild-30grad-desktop
+    {
+        position: absolute;
+        left: 256px;
+        bottom: 272px;
+        transform: rotate(30deg);
+    }
+
+    .padding-kredit
+    {
+        padding-bottom: 60px !important;
+        padding-right: 82px !important;
+        padding-left: 82px !important;
+    }
+
+    .header-oben
+    {
+        top: -73px !important;
+    }
+
+    .margin-paket-4
+    {
+        margin-bottom: -30px !important;
+    }
+
+    .margin-paket-4-21
+    {
+        margin-top: -20px !important;
+    }
+
+    #das-bekommst-du-seite-4-Bilder
+    {
+        margin-top: 22% !important;
+    }
+
+    #das-bekommst-du-seite-3-Bilder
+    {
+        margin-top: 22% !important;
+    }
+
+    #das-bekommst-du-seite-2-Bilder
+    {
+        margin-top: 22% !important;
+    }
+
+    #das-bekommst-du-seite-1-Bilder
+    {
+        margin-top: 22% !important;
+    }
+
+    .button-link-verteiler
+    {
+        padding-left: 7% !important;
+        padding-right: 7% !important;
+    }
+
+    .button-link-verteiler-4
+    {
+        padding-left: 9% !important;
+        padding-right: 9% !important;
+    }
+
+    .button-link-verteiler-3
+    {
+        padding-left: 2.8% !important;
+        padding-right: 2.8% !important;
+    }
+
+    .button-link-verteiler-2
+    {
+        padding-left: 8.4% !important;
+        padding-right: 8.4% !important;
+    }
+
+    .links-margin
+    {
+        margin-top: 10% !important;
+    }
+
+    .links-logo-größe
+    {
+        width: 40% !important;
+    }
+
+    .größe-pop-up
+    {
+        max-width: 750px!important;
+        padding: 25px !important;
+    }
+
+    .pop-up-abstand
+    {
+        margin-top: 110px !important;
+    }
+}
+
+.bbf-img-darker
+{
+    background-image: url('../img/Bilder-2018/bbf-mutter-kind.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 60%;
+}
+
+.bbf-img-darker::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.myDiv-bbf {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/Bilder-2018/Baby-Hand.jpg');
+    background-position-y: 40%;
+    background-position-x: 30%;
+}
+
+.button.bbf-button-green {
+    border-radius: 3px;
+    border-bottom: 3px solid rgba(0,0,0,0.15);
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.button.bbf-button-green:hover {
+    background-color: #3BC47F !important;
+    opacity: 0.9;
+}
+
+.button.bbf-button-red {
+    border-radius: 3px;
+    border-bottom: 3px solid rgba(0,0,0,0.15);
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.button.bbf-button-red:hover {
+    background-color: #FF004B !important;
+    opacity: 0.9;
+}
+
+
+/*Handy*/
+@media screen
+and (max-device-width: 767px) {
+
+    .display-aus-monitor
+    {
+        display: none;
+    }
+
+    .bbf-img-darker
+    {
+        background-position-x: 70%;
+    }
+
+    .bbf-img-p-seg
+    {
+        background-size: 850px !important;
+        padding: 150px 0 !important;
+    }
+
+    .padding-überschrift
+    {
+        padding: 2em;
+    }
+
+    .font-size-standard-überschrift
+    {
+        font-size: 25px !important;
+        font-weight: 500 !important;
+        text-transform: uppercase !important;
+    }
+
+    .margin-banner
+    {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .landing-bottom
+    {
+        bottom: 19px !important;
+    }
+
+    .font-size-landing
+    {
+        font-size: 13px !important;
+        float: none !important;
+    }
+
+    .landing-home-banner
+    {
+        padding: 20px 0 !important;
+        margin-top: 0px !important;
+    }
+
+    .landing-home-banner-font-size
+    {
+        font-size: 28px !important;
+    }
+
+    .divider-abstand
+    {
+        margin-top: -20px !important;
+    }
+
+    #color-background-grau
+    {
+        background-color: #f3f3f3 !important;
+    }
+
+    .color-background-grau
+    {
+        background-color: #f9f9f9 !important;
+    }
+
+    .color-background-white
+    {
+        background-color: white !important;
+    }
+
+    #font-size-home
+    {
+        font-size: 25px !important;
+    }
+
+    .bild-30grad
+    {
+        position: absolute;
+        left: 267px;
+        bottom: 347px;
+        transform: rotate(30deg);
+    }
+
+    .bild-30grad-insta-seite
+    {
+        position: absolute;
+        left: 267px;
+        bottom: 713px;
+        transform: rotate(30deg);
+    }
+
+    .bild-30grad-program-seiten
+    {
+        position: absolute;
+        left: 267px;
+        bottom: 718px;
+        transform: rotate(30deg);
+    }
+
+    .bild-30grad-program-seiten-2
+    {
+        position: absolute;
+        left: 267px;
+        bottom: 774px;
+        transform: rotate(30deg);
+    }
+
+    .bild-30grad-insta-seite-3
+    {
+        position: absolute;
+        left: 267px;
+        bottom: 580px;
+        transform: rotate(30deg);
+    }
+
+    .bild-30grad-2
+    {
+        position: absolute;
+        left: 258px;
+        bottom: 284px;
+        transform: rotate(30deg);
+    }
+
+    .bild-größe-kredit
+    {
+        width: 70% !important;
+    }
+
+    .margin-ändern-button
+    {
+        margin-left: 0px !important;
+    }
+
+    .instagram-seite-header
+    {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .instagram-seite-footer
+    {
+        margin-bottom: -435px !important;
+    }
+
+    .neue-pricing-table
+    {
+        padding-left: 0em !important;
+    }
+
+    .kein-margin-insta
+    {
+        margin: 0 !important;
+    }
+
+    .so-einfach-geht-schriftgröße
+    {
+        font-size: 20px !important;
+    }
+
+    .so-einfach-geht-abstand
+    {
+        margin-top:  -40px!important;
+    }
+
+    .abo-pricing-table
+    {
+        position: absolute;
+        left: 258px;
+        bottom: 285px;
+        transform: rotate(30deg);
+    }
+
+    .abstand-mobile-insta
+    {
+        margin-top: 30px !important;
+    }
+
+    .abstand-mobile-insta-bottom
+    {
+        margin-bottom: 30px !important;
+    }
+
+    .abstand-mobile-insta-bottom-0
+    {
+        margin-bottom: 0px !important;
+    }
+
+    .abstand-vision
+    {
+        padding: 100px 0 !important;
+    }
+
+    .abstand-mobile-instagram
+    {
+        padding: 35px 0 !important;
+    }
+
+    .abstand-mobile-instagram-bottom
+    {
+        padding-bottom: 35px !important;
+    }
+
+    .color-pricing
+    {
+        background: #F9F9F9 !important;
+    }
+
+    .font-size-instagram
+    {
+        font-size: 17px !important; ;
+    }
+
+    .schatten-entfernen
+    {
+        box-shadow: 0px 0px !important;
+    }
+
+    .display-ausschalten-mobile
+    {
+        display: none !important;
+    }
+
+    .firmenpage-margin
+    {
+        margin:  0 0 !important;
+    }
+
+    .firmenpage-schriftgröße
+    {
+        font-size: 1.4em !important;
+    }
+
+    .größe-padding
+     {
+        padding: 44px !important;
+        right: 0px !important;
+    }
+
+    .soeinfachgehts-insta
+    {
+        padding: 0px;
+        margin-top: 15px;
+    }
+
+    .soeinfachgehts-insta-1
+    {
+        padding: 0px;
+    }
+
+    .instagram-seite-abstand
+    {
+        margin-bottom: -435px !important;
+    }
+
+    .das-bekommst-du-header-neu
+    {
+        margin-top: 0px !important;
+    }
+
+    .paket-2-seite-vorteile
+    {
+        margin: 0px !important;
+    }
+
+    .paket-2-seite-vorteile-bottom
+    {
+        margin-bottom: 30px !important;
+    }
+
+    .kein-padding-paket-2
+    {
+        padding: 0 !important;
+    }
+
+    .padding-paket-2-landing
+    {
+        padding: 3px !important;
+    }
+
+    .paket-4-abstand
+    {
+        margin-bottom:  -30px!important;
+    }
+
+    .paket-4-abstand-2
+    {
+        margin-top:  -20px!important;
+    }
+    .font-size-lmoptin
+    {
+        font-size: 25px !important;
+    }
+
+    #abstand-lmoptin
+    {
+        margin-bottom: 0px!important;
+    }
+
+    .margin-lmoptin
+    {
+        margin-bottom: -30px !important;
+    }
+
+    .font-size-footer-lmoptin
+    {
+       font-size: 10px !important;
+    }
+
+    .link-verteiler-siegel
+    {
+        width: 45% !important;
+    }
+
+    .button-link-verteiler
+    {
+        padding-left: 21% !important;
+        padding-right: 21% !important;
+    }
+
+    .button-link-verteiler-3
+    {
+        padding-left: 7.8% !important;
+        padding-right: 7.8% !important;
+    }
+
+    .button-link-verteiler-2
+    {
+        padding-left: 25% !important;
+        padding-right: 25% !important;
+    }
+
+    .links-siegel-abstand
+    {
+        padding-top: 8px !important;
+    }
+
+    .links-logo-größe-handy
+    {
+        width: 70% !important;
+    }
+
+    .links-logo-margin
+    {
+        margin-top: -10% !important;
+    }
+
+    .button-program-verteiler-3
+    {
+        padding-left: 8.8% !important;
+        padding-right: 8.8% !important;
+    }
+
+    .button-program-verteiler-2
+    {
+        padding-left: 20% !important;
+        padding-right: 20% !important;
+    }
+
+    .personaltraining-da-abstand
+    {
+        padding: 0px !important;
+        background-position-x: 43% !important;
+    }
+
+    .bild-größe-personaltraining
+    {
+        width: 75% !important;
+    }
+
+    .margin-coupon-button
+    {
+        margin-top: 20px !important;
+        padding-left: 34% !important;
+        padding-right: 34% !important;
+    }
+
+    .pop-up-größe-handy
+    {
+        margin-top: 15% !important;
+    }
+
+    .margin-button-pop
+    {
+        margin-bottom: 12px !important;
+    }
+
+    .banner-barmer
+    {
+        width: 100% !important;
+    }
+
+    .banner-barmer-größe
+    {
+        width: 70% !important;
+    }
+}
+
+/*Handy portrait*/
+@media screen
+and (orientation: portrait)
+and (max-device-width: 767px) {
+
+    .button-abo-kredit
+    {
+        padding-bottom: 60px !important;
+        right: 10px !important;
+        padding-right: 42px !important;
+        padding-left: 42px !important;
+    }
+
+    #groeße-mobile
+    {
+        width: 375px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .landing-background-position
+    {
+        background-position-x: -120px !important;
+    }
+
+    .font-size-landing-2
+    {
+        font-size: 15px !important;
+        float: none !important;
+        top: 30px !important;
+    }
+
+    .handy-paket-2
+    {
+        margin-bottom: 20px !important;
+        margin-top: -40px !important;
+    }
+
+    .das-bekommst-du-header
+    {
+        margin-top: -11px !important;
+    }
+
+    .das-bekommst-du-header-2
+    {
+        margin-top: -15px !important;
+    }
+
+    .das-bekommst-du-header-3
+    {
+        line-height: 55px !important;
+    }
+
+    .mitgliedschaft-kündigen-seite
+    {
+        margin-right: 40px;
+    }
+
+    .mitgliedschaft-kündigen-form
+    {
+        width: 100% !important;
+    }
+
+    .after-birth-lp-button-abstand
+    {
+        margin-top: -30px !important;
+    }
+
+    .padding-coupon-input
+    {
+        padding-right: 55px !important;
+        margin-left: 3px;
+    }
+
+    .button-link-verteiler-5
+    {
+        padding-left: 27% !important;
+        padding-right: 27% !important;
+    }
+
+    .button-link-verteiler-hp
+     {
+         padding-left: 15.5% !important;
+         padding-right: 15.5% !important;
+     }
+
+    .banner-bamer-margin
+    {
+        margin-top: 13.4% !important;
+    }
+
+    .banner-schriftgröße
+    {
+        font-size: 17px !important;
+    }
+
+}
+
+/*Handy landscape*/
+@media screen
+and (orientation: landscape)
+and (max-device-width: 767px) {
+
+    .landing-background-position
+    {
+        background-position-x: 0px !important;
+    }
+
+    .banner-bamer-margin
+    {
+        margin-top: 17% !important;
+    }
+
+    .banner-schriftgröße
+    {
+        font-size: 21px !important;
+    }
+
+    .button-abo-kredit
+    {
+        padding-bottom: 60px !important;
+        padding-right: 70px !important;
+        padding-left: 70px !important;
+    }
+
+    .font-size-das-bekommst-du
+    {
+        font-size: 20px !important;
+    }
+
+    .button-header-landing
+    {
+        right: 0px !important;
+    }
+
+    .mitgliedschaft-kündigen-seite-2
+    {
+        margin-right: 190px;
+    }
+
+    .header-instagram
+    {
+        background-position-x: 0px !important;
+    }
+
+    .font-schriftgröße-1
+    {
+        font-size: 25px !important;
+    }
+
+    .button-program
+    {
+        margin-top: 83px !important;
+    }
+
+    .padding-paket-4
+    {
+        padding: 80px 0 !important;
+    }
+
+    .paket-4-höhe
+    {
+        height: 120px !important;
+    }
+
+    .font-size-paket-4
+    {
+        font-size: 16px !important; ;
+    }
+
+    .font-size-landing-2
+    {
+        font-size: 13px !important;
+        float: none !important;
+    }
+
+    .paket-4-höhe-margin
+    {
+       height: 111px !important;
+    }
+
+    .paket-4-höhe-margin-top
+    {
+        margin-top: -20px !important;
+    }
+
+    .paket-4-höhe-margin-top-2
+    {
+        margin-top: -10px !important;
+    }
+
+    .Paket-2-tabs-abstand
+    {
+        padding: 75px !important;
+    }
+
+    .get-ready-lp-tabs
+    {
+        width: 50% !important;
+    }
+
+    .get-ready-lp-höhe-margin-top-2
+    {
+        margin-top: 0px !important;
+    }
+
+    .padding-coupon-input
+    {
+        padding-right: 135px !important;
+        margin-left: 30px;
+    }
+
+    .button-link-verteiler-5
+    {
+        padding-left: 25.5% !important;
+        padding-right: 25.5% !important;
+    }
+
+    .abstand-link-verteiler
+    {
+        margin-top: 40px;
+    }
+
+    .button-link-verteiler-hp
+    {
+        padding-left: 12.5% !important;
+        padding-right: 12.5% !important;
+    }
+}
+
+@media screen
+and (max-device-width: 769px) {
+
+    .margin-ändern-button
+    {
+        margin-left: 0px !important;
+    }
+}
+
+.margin-ändern-button
+{
+    margin-left: 130px;
+}
+
+.margin-abstand-zahlungsseite
+{
+    width: 600px !important;
+}
+
+/*Ipad portrait*/
+@media only screen
+and (min-device-width : 700px)
+and (max-device-width : 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 1)
+{
+    .kein-width
+    {
+        width: 530px !important;
+    }
+
+    .schriftgröße-english-home
+    {
+        font-size: 15px !important;
+    }
+
+    .banner-bamer-margin
+    {
+        margin-top: 10.1% !important;
+    }
+
+    .banner-barmer-größe
+    {
+        width: 60% !important;
+    }
+
+    .kein-margin
+    {
+        margin-left: auto !important;
+        padding-left: 90px !important;
+    }
+
+    .margin-aktions-seite
+     {
+         margin-left: 190px;
+     }
+
+    .font-size-landing-2
+    {
+        font-size: 30px !important;
+        float: none !important;
+        top: 45px !important;
+    }
+
+    .paket-2-seite
+    {
+        width: 768px !important;
+    }
+
+    .paket-2-seite-1
+    {
+        margin-bottom: 9px !important;
+    }
+
+    .das-bekommst-du-tabs
+    {
+        width: 46% !important;
+    }
+
+    .das-bekommst-du-tabs-abstand
+    {
+        padding: 0px !important;
+    }
+
+    .abo-registrieren
+    {
+        margin-left: 135px !important;
+    }
+
+    .programm-seite-siegel
+    {
+        display: none !important;
+    }
+
+    .landing-button
+    {
+        padding-left: 0px !important;
+    }
+
+    .landing-button-2
+    {
+        padding-right: 25px !important;
+    }
+
+    .insta-überschrift
+    {
+        font-size: 30px !important;
+        margin-top: 27px !important;
+    }
+
+    .insta-pricing-table
+    {
+        right: 0px !important;
+    }
+
+    .insta-pricing-table-1
+    {
+        left: 0px !important;
+    }
+
+    .insta-schriftgröße
+    {
+        font-size: 16px!important;
+    }
+
+    .header-instagram-ipad
+    {
+        background-position-y: 0px !important;
+    }
+
+    .padding-instagram
+    {
+        padding-left: 0px !important;
+    }
+
+    .padding-instagram-1
+    {
+        right:200px !important;
+    }
+
+    .padding-instagram-2
+    {
+        right:220px !important;
+    }
+
+    .das-bekommst-du-header-neu
+    {
+        margin-top: 0px !important;
+    }
+
+    .program-seite-vorteile
+    {
+        margin-top: 0 !important;
+    }
+
+    .Paket-4-tabs-abstand
+    {
+        padding: 100px !important;
+    }
+    .premium-seite-header
+    {
+        padding: 84px 0 !important;
+    }
+    .premium-seite-margin
+    {
+        margin-top: 0px !important;
+    }
+
+    .premium-seite-margin-2
+    {
+        margin-top: -71px !important;
+    }
+
+    .footer-ipad-anpassung
+    {
+        font-size: 14px !important;
+    }
+
+    .footer-ipad-anpassung-margin
+    {
+        margin-bottom: 20px !important;
+    }
+
+    .footer-ipad-anpassung-abstand
+    {
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+    .footer-ipad-anpassung-display
+    {
+        display: block !important;
+    }
+
+    .footer-ipad-anpassung-display-aus
+    {
+        display: none !important;
+    }
+
+    .background-size-landing
+    {
+        background-position-x: -125px;
+    }
+}
+
+/*Ipad landscape*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 1)
+{
+    .kein-width
+    {
+        width: 530px !important;
+    }
+
+    .banner-bamer-margin
+    {
+        margin-top: 12.9% !important;
+    }
+
+    .margin-aktions-seite
+    {
+        margin-left: 170px;
+    }
+
+    .banner-barmer-größe
+    {
+        width: 60% !important;
+    }
+
+    .kein-margin
+    {
+        margin-left: auto !important;
+        padding-left: 90px !important;
+    }
+    .paket-2-seite
+    {
+        width: 1020px !important;
+    }
+
+    .font-size-landing-2
+    {
+        font-size: 30px !important;
+        float: none !important;
+        top: 45px !important;
+    }
+
+    .paket-2-seite-1
+    {
+        margin-bottom: 78px !important;
+    }
+
+    .das-bekommst-du-tabs
+    {
+        width: 35% !important;
+    }
+
+    .abo-registrieren
+    {
+        margin-left: 135px !important;
+    }
+
+    .programm-seite-siegel
+    {
+        display: none !important;
+    }
+
+    .insta-überschrift
+    {
+        font-size: 30px !important;
+        margin-top: 27px !important;
+    }
+
+    .insta-pricing-abstand
+    {
+        right: 50px !important;
+    }
+
+    .insta-pricing-abstand-1
+    {
+        left: 50px !important;
+    }
+
+    .insta-ipad-schriftgröße
+    {
+        font-size: 22px !important;
+    }
+
+    .kündigen-seite
+    {
+        font-size: 12px !important;
+    }
+
+    .header-instagram-ipad
+    {
+        background-position-y: 0px !important;
+    }
+
+    #font-size-home-ipad
+    {
+        font-size: 25px !important;
+    }
+
+    .schriftgröße-english-home
+    {
+        font-size: 20px !important;
+    }
+
+}
+
+/*Ipad Pro landscape*/
+@media only screen
+and (min-device-width : 1025px)
+and (max-device-width : 1600px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 1.5)
+{
+    .kein-width
+    {
+        width: 530px !important;
+    }
+
+    .banner-bamer-margin
+    {
+        margin-top: 4.7% !important;
+    }
+
+    .kein-margin
+    {
+        margin-left: auto !important;
+        padding-left: 90px !important;
+    }
+
+    .paket-2-seite
+    {
+        width: 1365px !important;
+    }
+
+    .paket-2-seite-1
+    {
+        margin-bottom: 35px !important;
+    }
+
+    .das-bekommst-du-tabs
+    {
+        width: 25% !important;
+    }
+
+    .abo-registrieren
+    {
+        margin-left: 135px !important;
+    }
+
+    .programm-seite-siegel
+    {
+        right: 50px !important;
+    }
+
+    .insta-überschrift
+    {
+        font-size: 30px !important;
+        margin-top: 27px !important;
+    }
+
+    #font-size-home-ipad
+    {
+        font-size: 25px !important;
+    }
+
+    .margin-aktions-seite
+    {
+        margin-left: 10%;
+    }
+
+    .schriftgröße-english-home
+    {
+        font-size: 25px !important;
+    }
+}
+
+/*Ipad Pro portrait*/
+@media only screen
+and (min-device-width : 1024px)
+and (max-device-width : 1600px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 1.5)
+{
+
+    .paket-2-seite
+    {
+        width: 1018px !important;
+    }
+
+    .font-size-landing-2
+    {
+        font-size: 30px !important;
+        float: none !important;
+        top: 45px !important;
+    }
+
+    .paket-2-seite-1
+    {
+        margin-bottom: 35px !important;
+    }
+
+    .das-bekommst-du-tabs
+    {
+        width: 35% !important;
+    }
+
+    .abo-registrieren
+    {
+        margin-left: 135px !important;
+    }
+
+    .programm-seite-siegel
+    {
+        display: none !important;
+    }
+
+    .landing-button
+    {
+        padding-left: 200px !important;
+    }
+
+    .landing-button-2
+    {
+        padding-right: 200px !important;
+    }
+
+    .insta-überschrift
+    {
+        font-size: 30px !important;
+        margin-top: 27px !important;
+    }
+
+    .insta-seite-mama-meinungen
+    {
+        height: 1398px !important;
+        padding-top: 279px!important;
+    }
+
+    .kündigen-seite
+    {
+        font-size: 12px !important;
+    }
+    #font-size-home-ipad
+    {
+        font-size: 25px !important;
+    }
+
+    .margin-aktions-seite
+    {
+        margin-left: 170px;
+    }
+
+    .banner-bamer-margin
+    {
+        margin-top: 12.9% !important;
+    }
+
+    .das-bekommst-du-header-neu
+    {
+        margin-top: -70px !important;
+    }
+    .padding-instagram-1
+    {
+        right:220px !important;
+    }
+
+    .Paket-4-tabs-abstand
+    {
+        padding: 185px !important;
+    }
+
+    .premium-seite-header
+    {
+        padding: 200px 0 !important;
+    }
+    .premium-seite-margin
+    {
+        margin-top: -95px !important;
+    }
+    .premium-seite-margin-2
+    {
+        margin-top: -95px !important;
+    }
+
+    .footer-ipad-anpassung-display
+    {
+        display: none !important;
+    }
+
+    .footer-ipad-anpassung
+    {
+        font-size: 15px !important;
+    }
+
+    .footer-ipad-anpassung-margin
+    {
+        margin-bottom: 50px !important;
+    }
+
+    .dbd-rueckbildung
+    {
+        background-position-x: 75% !important;
+    }
+
+    #funnel-manuel-seryan
+    {
+        width: 870px !important;
+        height: 490px !important;
+    }
+
+    .schriftgröße-english-home
+    {
+        font-size: 20px !important;
+    }
+}
+/*Ipad Pro und Ipad */
+@media only screen
+and (min-device-width : 700px)
+and (max-device-width : 1600px)
+and (-webkit-min-device-pixel-ratio: 1.5)
+{
+
+}

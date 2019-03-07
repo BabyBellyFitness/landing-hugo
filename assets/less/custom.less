@@ -1,0 +1,133 @@
+@color-BBF-gold: #AE9A64;
+@color-BBF-green: #3BC47F;
+@color-BBF-red: #FF004B;
+
+.color-gold-BBF
+{
+  color: @color-BBF-gold;
+}
+
+.color-red-BBF
+{
+  color: @color-BBF-red;
+}
+
+.color-green-BBF
+{
+  color: @color-BBF-green;
+}
+
+.padding-top-bbf(@top-padding-bbf: 10%)
+{
+  padding-top: @top-padding-bbf;
+}
+
+.padding-bbf(@padding-bbf: 1%)
+{
+  padding: @padding-bbf;
+}
+
+.p-top-bbf-sm
+{
+  .padding-top-bbf(2%);
+}
+
+.p-top-bbf-sm
+{
+  .padding-bbf(2%);
+}
+
+.bbf-font
+{
+  &-h1
+  {
+    font-family: 'Tangerine' , cursive;
+    font-weight: lighter;
+    font-size: 6em;
+  }
+  &-h2
+  {
+    font-family: 'Tangerine' , cursive;
+  }
+  &-p
+  {
+    font-family: 'Tangerine' , cursive;
+    font-weight: lighter;
+    font-size: 2.5em;
+
+    &-gold
+    {
+      color: @color-BBF-gold;
+    }
+    &-white
+    {
+      color: white;
+    }
+  }
+
+}
+
+.bbf-font-article
+{
+  font-size: 2em;
+}
+
+.bbf-icon-krone
+{
+  width: 7%;
+}
+
+@media screen
+and (max-device-width: 767px) {
+
+  .bbf-handy-font-size
+  {
+    font-size: 1.5em !important;
+  }
+
+  .bbf-handy-off
+  {
+    display: none;
+  }
+
+  .bbf-handy-on
+  {
+    display: block;
+  }
+
+  .bbf-handy-font-size-tabell
+  {
+    font-size: 1em !important;
+  }
+
+  .bbf-handy-font-size-2
+  {
+    font-size: 2em;
+  }
+
+  .bbf-handy-font-size-h
+  {
+    font-size: 3em;
+  }
+
+  span.sternebewertung:not(:checked) > label {
+    padding: 0 0 !important;
+  }
+
+  .bbf-handy-textarea
+  {
+    width: 100% !important;
+  }
+
+  .bbf-handy-clear
+  {
+    clear: both !important;
+  }
+
+  .bbf-handy-float
+  {
+    text-align: center !important;
+    float: none !important;
+  }
+}
+

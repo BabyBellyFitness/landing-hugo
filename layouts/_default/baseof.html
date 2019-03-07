@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="de-DE">
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="BabyBellyFitness" />
+
+    <link rel="shortcut icon" href="/img/3D_BBF_transparent-Cutout.png">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+
+    {{ $bootstrap := resources.Get "css/bootstrap.css" }}
+    {{ $style := resources.Get "css/style.css" }}
+    {{ $swiper := resources.Get "css/swiper.css" }}
+    {{ $dark := resources.Get "css/dark.css" }}
+    {{ $onepage := resources.Get "css/onepage.css" }}
+    {{ $fonticons := resources.Get "css/font-icons.css" }}
+    {{ $animate := resources.Get "css/animate.css" }}
+    {{ $magnificpopup := resources.Get "css/magnific-popup.css" }}
+    {{ $bsswitches := resources.Get "css/components/bs-switches.css" }}
+    {{ $responsive := resources.Get "css/responsive.css" }}
+    {{ $customabo := resources.Get "css/custom-abo.css" }}
+    {{ $custom := resources.Get "css/custom.css" }}
+
+
+    {{ $styles := slice $bootstrap $style $swiper $dark $fonticons $animate $magnificpopup $bsswitches $responsive $onepage $customabo $custom }}
+    {{ $bundle := $styles | resources.Concat "css/bundle.css" }}
+    <link rel="stylesheet" href="{{ ($bundle | fingerprint).RelPermalink}}"  type="text/css" />
+
+    {{ block "styles" .}}{{ end }}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>BabyBellyFitness - {{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '307979402929983');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=307979402929983&ev=PageView&noscript=1"
+        /></noscript>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88749598-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-88749598-2');
+    </script>
+
+    <script src="//static.getclicky.com/js" type="text/javascript"></script>
+    <script type="text/javascript">try{ clicky.init(101078289); }catch(e){}</script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101078289ns.gif" /></p></noscript>
+
+</head>
+
+<body class="stretched no-transition">
+
+    <div id="wrapper" class="clearfix">
+
+        {{ partial "header.html" }}
+
+        {{ block "main" . }}{{ end }}
+
+        {{ partial "footer.html" }}
+
+    </div>
+
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ (resources.Get "js/plugins.js").RelPermalink }}"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.min.css"/>
+
+    <script type="text/javascript" src="{{ (resources.Get "js/functions.js").RelPermalink }}"></script>
+
+    {{ block "scripts" . }}{{ end }}
+
+    <script type="text/javascript">
+        ;(function($) {
+            'use strict';
+
+            swal.setDefaults({
+                allowEscapeKey: true,
+                reverseButtons: true
+            });
+
+            $(window).on('ajaxErrorMessage', function (evt, message) {
+                evt.preventDefault();
+
+                // give swal enough time to finish animating the overlay with multiple consecutive modals
+                setTimeout(function() {
+                    swal({
+                        text: message,
+                        buttonsStyling: false,
+                        confirmButtonClass: 'button is-primary is-medium',
+                        showCancelButton: false,
+                        reverseButtons: true,
+                        allowEscapeKey: true
+                    }).then(function() {
+                        swal.resetDefaults();
+                    });
+                }, 150);
+            }).on('ajaxConfirmMessage', function (evt, message) {
+                evt.preventDefault();
+
+                swal({
+                    text: message,
+                    buttonsStyling: false,
+                    confirmButtonClass: 'button is-primary is-medium',
+                    cancelButtonClass: 'button is-light is-medium',
+                    showCancelButton: true,
+                    reverseButtons: true,
+                    allowEscapeKey: true
+                }).then(function() {
+                    swal.resetDefaults();
+                    evt.promise.resolve(message);
+                }, function(dismiss) {
+                    swal.resetDefaults();
+                    evt.promise.reject();
+                });
+
+                return true;
+            });
+
+        }(jQuery));
+    </script>
+</body>

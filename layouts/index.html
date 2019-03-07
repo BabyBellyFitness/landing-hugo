@@ -1,0 +1,450 @@
+{{ define "styles" }}
+    {{ $travel := resources.Get "css/travel.css" }}
+    {{ $datepicker := resources.Get "css/datepicker.css" }}
+    {{ $interior := resources.Get "css/interior-design.css" }}
+    {{ $typewriter := resources.Get "css/typewriter.css" }}
+    {{ $restaurant := resources.Get "css/restaurant.css" }}
+
+    {{ $pageStyles := slice $travel $datepicker $interior $typewriter $restaurant }}
+    {{ $pageBundle := $pageStyles | resources.Concat "css/pagebundle.css" }}
+    <link rel="stylesheet" href="{{ ($pageBundle | fingerprint).RelPermalink}}"  type="text/css" />
+{{ end }}
+
+{{ define "scripts" }}
+<script type="text/javascript">
+
+    jQuery(document).ready( function($){
+        $('#food-menu-carousel').owlCarousel({
+            animateIn: 'fadeIn',
+            animateOut: 'fadeOut',
+            items: 1,
+            mouseDrag: false,
+            dotsContainer: '#item-thumb',
+        });
+    });
+
+</script>
+{{ end }}
+
+{{ define "main" }}
+<section id="page-title" class="page-title-dark landing-home-banner bbf-img-darker" style="padding: 270px 0; margin-top: -70px; z-index: 1" data-stellar-background-ratio="0.3">
+
+    <div class="clearfix">
+
+        <div class="container clearfix img-seryan-das-bekommst-du-size" style="z-index: 1">
+            <h2 class="landing-home-banner-font-size" style="font-size: 50px; font-weight: 500; color: white;font-family: 'PT Sans', sans-serif;">Für die Bedürfnisse einer Mama</h2>
+            <span style="font-size: 25px; display: block">
+                Das erste Online Mama-Programm mit Verantwortung
+            <br></span>
+        </div>
+
+
+        <div class="container clearfix topmargin-sm" style="z-index: 1">
+
+            <a href="https://private.babybellyfitness.de/private/signup/plans" style="background-color: transparent; color: white; border-radius: 5px; border: 2px #FF004B solid" class="button-login button bbf-button-red button-link-verteiler-2 button-link-verteiler-hp" data-class-lg="button-xlarge" data-class-md="button-large" data-class-sm="button-normal" data-class-xs="button-large" data-class-xxs="button-large">Jetzt loslegen!</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="content">
+
+
+    <div class="section notopmargin noborder nobottommargin" style="padding: 0 0;">
+
+        <div id="portfolio" class="portfolio grid-container portfolio-2 portfolio-masonry portfolio-nomargin portfolio-overlay-open clearfix">
+
+            <article class="portfolio-item pf-media pf-icons">
+                <div class="portfolio-image">
+                    <img src="/img/bearbeitet/RückbildungFINALMiddle.jpg" alt="Beach Activities">
+                    <div class="portfolio-overlay">
+                        <div id="das-bekommst-du-seite-4-Bilder" class="portfolio-desc">
+                            <h1 class="no-font-size-ser" style="color: white; font-size: 2em; font-family: 'PT Sans', sans-serif;">Effektive Rückbildung</h1>
+                            <a href="/you-get#section-Rueckbildung"  style="background-color: transparent; color: white;border: solid; border-width: 1px; border-color: #AE9A64; padding: 10px 30px; font-weight: lighter" class="button-login button button-3d" data-class-lg="button-normal" data-class-md="button-normal" data-class-sm="button-large" data-class-xs="button-large" data-class-xxs="button-large">Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="portfolio-item pf-media pf-icons">
+                <div class="portfolio-image">
+                    <img src="/img/bearbeitet/Training-4-Bilder.jpg" width="600" height="400" alt="Beach Activities">
+                    <div class="portfolio-overlay">
+                        <div id="das-bekommst-du-seite-3-Bilder" class="portfolio-desc">
+                            <h1 class="no-font-size-ser" style="color: white; font-size: 2em; font-family: 'PT Sans', sans-serif;">Stärkende Workouts</h1>
+                            <a href="/personal-training#section-Personal"  style="background-color: transparent; color: white;border: solid; border-width: 1px; border-color: #AE9A64; padding: 10px 30px;font-weight: lighter" class="button-login button button-3d" data-class-lg="button-normal" data-class-md="button-normal" data-class-sm="button-large" data-class-xs="button-large" data-class-xxs="button-large">Mehr erfahren</a>
+
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="portfolio-item pf-media pf-icons">
+                <div class="portfolio-image">
+                    <img src="/img/bearbeitet/Ernahrung-4-Bilder_Dark.jpg" alt="Beach Activities">
+                    <div class="portfolio-overlay">
+                        <div id="das-bekommst-du-seite-2-Bilder" class="portfolio-desc">
+                            <h1 class="no-font-size-ser" style="color: white; font-size: 2em; font-family: 'PT Sans', sans-serif;">Gesunde Ernährung für die Stillzeit</h1>
+                            <a href="/ernaehrung#section-Ernährung"  style="background-color: transparent; color: white;border: solid; border-width: 1px; border-color: #AE9A64; padding: 10px 30px; font-weight: lighter" class="button-login button button-3d" data-class-lg="button-normal" data-class-md="button-normal" data-class-sm="button-large" data-class-xs="button-large" data-class-xxs="button-large">Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="portfolio-item pf-media pf-icons">
+                <div class="portfolio-image">
+                    <img src="/img/bearbeitet/So-einfach-gehts-HEADER-FINAL.jpg" alt="Beach Activities">
+                    <div class="portfolio-overlay">
+                        <div id="das-bekommst-du-seite-1-Bilder" class="portfolio-desc">
+                            <h1 class="no-font-size-ser" style="color: white; font-size: 2em; font-family: 'PT Sans', sans-serif;">Zusätzliche Hebammen-Tipps</h1>
+                            <a href="/mama-tipps#section-Mama"  style="background-color: transparent; color: white;border: solid; border-width: 1px; border-color: #AE9A64; padding: 10px 30px; font-weight: lighter" class="button button-3d" data-class-lg="button-normal" data-class-md="button-normal" data-class-sm="button-large" data-class-xs="button-large" data-class-xxs="button-large">Mehr erfahren</a>
+
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="clear"></div>
+
+    </div>
+
+    <div class="section nobottommargin notopmargin" style="background: #FFF no-repeat top left / cover; padding: 60px 0; border-top: 1px solid #EEE;">
+        <div class="container clearfix">
+            <div class="heading-block center nobottommargin nobottomborder">
+                <h1 class="nott ls0" style="color: #AE9A64">Mama Meinungen</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="section food-menu notopmargin nopadding nobottommargin">
+        <div class="container-fluid">
+            <div class="row common-height clearfix">
+                <div class="col-md-7 clearfix">
+                    <div class="vertical-middle" >
+                        <div class="col-padding clearfix">
+                            <div><div id="item-thumb" class="item-thumb testimonials-landing-seryan"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 testimonials-landing-ser insta-seite-mama-meinungen" style="background-color: #FFF; padding: 0; box-shadow: -4px 1px 15px 3px rgba(0,0,0,0.07);">
+                    <div id="food-menu-carousel" class="menu-carousel owl-carousel image-carousel food-menu-carousel custom-js" data-animate-in="fadeIn" data-margin="0" data-nav="false" data-pagi="false" data-items="1">
+
+                        <div class="oc-item">
+                            <img src="/img/Miriam.jpg" alt="Image 1">
+                            <div class="food-content clearfix">
+                                <div class="heading-block nobottomborder nobottommargin">
+                                    <h3 class="nott" style="color: #AE9A64">Miriam</h3>
+                                    <div class="food-info"></div>
+                                    <p class="nobottommargin">
+                                        Da ich selbst Physiotherapeutin bin, fiel es mir nicht leicht eine gute und durchdachte
+                                        Anleitung für den Anschluss an die Rückbildung zu finden.
+                                        Trotz meines Fachwissens wollte ich gerne neue Anregungen und Motivation.
+                                        Durch die sozialen Medien wurde ich auf BabyBellyFitness aufmerksam und kann
+                                        rückblickend sagen, dass es ein unglaublich gut aufeinander abgestimmtes Programm ist.
+                                        Es umfasst die neuesten Infos zum Baby, leckere und gesunde Rezepte ohne zu hungern,
+                                        tolle und motivierende Übungseinheiten und eine verständliche und angenehme
+                                        Anleitung.
+                                        Trotz meiner Rektusdiastase konnte ich alle Übungen mitmachen, da das Programm
+                                        sämtliche „MamaWehwehchen“ berücksichtigt.
+                                        Ich kann es guten Gewissens weiterempfehlen und würde mich jeder Zeit wieder dafür
+                                        entscheiden, sollte nochmal Nachwuchs geplant sein.
+                                        <br><br> <strong>Besuche mich auf </strong> <a target="_blank" href="https://www.instagram.com/miriamnadine">Instagram</a>
+                                    </p>
+                                </div>
+                                <div class="food-price  color fleft font-primary"><i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i></div>
+
+                                <a href="https://private.babybellyfitness.de/signup/plans" style="background-color: #FF004B ; color: white; border-radius: 5px;" class="button button-3d-ser topmargin-sm" data-class-lg="button-normal" data-class-md="button-normal" data-class-sm="button-small" data-class-xs="button-small" data-class-xxs="button-small">Jetzt loslegen!</a>
+                            </div>
+                        </div>
+                        <div class="oc-item">
+                            <img src="/img/Deborah_Testimonial.jpg" alt="Image 2">
+                            <div class="food-content clearfix">
+                                <div class="heading-block nobottomborder nobottommargin">
+                                    <h3 class="nott" style="color: #AE9A64">Deborah</h3>
+                                    <div class="food-info"></div>
+                                    <p class="nobottommargin">
+                                        Ich als zweifache Mama kann von diesem Programm zu 100% profitieren. Ist es schon
+                                        mit einem Kind schwer die Rückbildung und Fitness in den Alltag einzubauen, wird es
+                                        mir hier unglaublich leicht gemacht, da ich ortsungebunden Zugriff auf das Programm
+                                        habe. So saß ich schon um 2 Uhr nachts da und habe Rückbildungsübungen mit
+                                        BabyBellyFitness gemacht. Ich kann mein Baby mit einbinden, erhalte obendrein noch
+                                        wichtige Informationen zu seinen Entwicklungsschritten, und Ernährungstipps. Als Mama,
+                                        die sich für das Thema Ernährung begeistert, empfehle ich die vorgeschlagenen Rezepte
+                                        in doppelter Menge vorzukochen, so kann man auch am nächsten Tag noch davon
+                                        profitieren und muss nicht jeden Tag frisch kochen. Das spart Zeit aber keine
+                                        Nährstoffe ;-)<br>
+                                        Einen Daumen hoch für BabyBellyFitness, das mich nach meiner Entbindung gut
+                                        aufgefangen hat.<br><br> <strong>Besuche mich auf </strong> <a target="_blank" href="https://www.instagram.com/teamlutz/">Instagram</a>
+                                    </p>
+                                </div>
+                                <div class="food-price  color fleft font-primary"><i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                </div>
+                                <a href="https://private.babybellyfitness.de/signup/plans" style="background-color: #FF004B ; color: white; border-radius: 5px;" class="button button-3d-ser topmargin-sm" data-class-lg="button-normal" data-class-md="button-normal" data-class-sm="button-small" data-class-xs="button-small" data-class-xxs="button-small">Jetzt loslegen!</a>
+                            </div>
+                        </div>
+                        <div class="oc-item">
+                            <img src="/img/Leni.jpg" alt="Image 3">
+                            <div class="food-content clearfix">
+                                <div class="heading-block nobottomborder nobottommargin">
+                                    <h3 class="nott" style="color: #AE9A64">Leni</h3>
+                                    <div class="food-info"></div>
+                                    <p class="nobottommargin">
+                                        BabyBellyFitness ist wirklich eine tolle Sache, die Rückbildung, Sport, gesunde Ernährung
+                                        und tolle Baby Updates beinhaltet. Und das alles auf frischgebackene Mamis
+                                        abgestimmt! Man braucht keinen Babysitter zu organisieren um ins Fitnessstudio zu
+                                        gehen, sondern kann die Übungen ganz entspannt Zuhause mit Baby machen oder
+                                        wenn das Baby eben schläft! Außerdem trainiert man im Fitnessstudio meistens noch
+                                        falsch und kein Trainer benutzt jemals das Wort "Beckenboden" 😳<br>
+                                        Das Programm war super, hat Spaß gemacht und ich habe mich jederzeit "in guten
+                                        Händen" gefühlt 😊 die Baby Updates sind super süß gestaltet und ich habe mich jede
+                                        Woche aufs Neue darauf gefreut!<br><br> <strong>Besuche mich auf </strong> <a target="_blank" href="https://www.instagram.com/__leni89/">Instagram</a>
+                                    </p>
+                                </div>
+                                <div class="food-price  color fleft font-primary"><i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                </div>
+                                <a href="https://private.babybellyfitness.de/signup/plans" style="background-color: #FF004B ; color: white; border-radius: 5px;" class="button button-3d-ser topmargin-sm" data-class-lg="button-normal" data-class-md="button-normal" data-class-sm="button-small" data-class-xs="button-small" data-class-xxs="button-small">Jetzt loslegen!</a>
+                            </div>
+                        </div>
+                        <div class="oc-item">
+                            <img src="/img/SabrinaTestimonial.jpg" alt="Image 4">
+                            <div class="food-content clearfix">
+                                <div class="heading-block nobottomborder nobottommargin">
+                                    <h3 class="nott" style="color: #AE9A64">Sabrina</h3>
+                                    <div class="food-info"></div>
+                                    <p class="nobottommargin">
+                                        BabyBellyFitness, ja einen Babybelly den hatte ich noch. Ich habe in der Schwangerschaft
+                                        40 Kilo zugenommen, das meiste war Wasser der Rest war Kinderschokolade und
+                                        Wassermelone. Einige Zeit nach der Entbindung habe ich auf Instagram von dem
+                                        BabyBellyFitness-Programm erfahren. Das schien genau das Richtige zu sein. Und genau
+                                        so war es auch! Es gibt Einheiten zur Rückbildung, diese wurden mir auch von meiner
+                                        Hebamme besonders nahegelegt.
+                                        Die anderen Fitnesseinheiten hatten genau die richtige Länge und Intensität für mich
+                                        und steigerten sich regelmäßig. Besonders toll war, dass ich Ben miteinbeziehen konnte
+                                        in die Sporteinheiten. Das Programm ist super auf meine Bedürfnisse als Mama
+                                        zugeschnitten und im Community-Bereich kann man sich super mit anderen Mamas
+                                        austauschen. Ich bin noch lange nicht am Ende mit meinem BabyBelly aber auf einem
+                                        sehr guten Weg.<br><br> <strong>Besuche mich auf </strong> <a target="_blank" href="https://www.instagram.com/brini.u.ben/">Instagram</a>
+                                    </p>
+                                </div>
+                                <div class="food-price  color fleft font-primary"><i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                </div>
+                                <a href="https://private.babybellyfitness.de/signup/plans" style="background-color: #FF004B ; color: white; border-radius: 5px;" class="button button-3d-ser topmargin-sm" data-class-lg="button-normal" data-class-md="button-normal" data-class-sm="button-small" data-class-xs="button-small" data-class-xxs="button-small">Jetzt loslegen!</a>
+                            </div>
+                        </div>
+                        <div class="oc-item">
+                            <img src="/img/JanaFoto1.jpg" alt="Image 5">
+                            <div class="food-content clearfix">
+                                <div class="heading-block nobottomborder nobottommargin">
+                                    <h3 class="nott" style="color: #AE9A64">Jana</h3>
+                                    <div class="food-info"></div>
+                                    <p class="nobottommargin">
+                                        „Die ersten Monate nach der Geburt war mir ein Rückbildungskurs mit anderen
+                                        Müttern einfach zu stressig. Ich wollte nicht ständig von A nach B hetzen und mich
+                                        unter Druck setzen. Mit dem Online-Rückbildungsprogramm von BabyBellyFitness
+                                        konnte ich ganz entspannt trainieren, wann ich Zeit und Lust dazu hatte. Ich werde
+                                        mich auch beim zweiten Kind wieder für BabyBellyFitness entscheiden.“<br><br> <strong>Besuche mich auf </strong> <a target="_blank" href="https://www.instagram.com/jananibe/?hl=de">Instagram</a> </p>
+                                </div>
+                                <div class="food-price  color fleft font-primary"><i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                </div>
+                                <a href="https://private.babybellyfitness.de/signup/plans" style="background-color: #FF004B ; color: white; border-radius: 5px;" class="button button-3d-ser topmargin-sm" data-class-lg="button-normal" data-class-md="button-normal" data-class-sm="button-small" data-class-xs="button-small" data-class-xxs="button-small">Jetzt loslegen!</a>
+                            </div>
+                        </div>
+                        <div class="oc-item">
+                            <img src="/img/Tabea.jpg" alt="Image 6">
+                            <div class="food-content clearfix">
+                                <div class="heading-block nobottomborder nobottommargin">
+                                    <h3 class="nott" style="color: #AE9A64">Tabea</h3>
+                                    <div class="food-info"></div>
+                                    <p class="nobottommargin">
+                                        Das BabyBellyFitness Programm ist einfach klasse! Für frische Mamis ideal nicht zu viel
+                                        aber effektiv. Dazu noch ein klasse Team was schnell auf Fragen oder Probleme eingeht.
+                                        Absolut Empfehlenswert!<br><br> <strong>Besuche mich auf </strong> <a target="_blank" href="https://www.instagram.com/tabeajulie/">Instagram</a>
+                                    </p>
+                                </div>
+                                <div class="food-price  color fleft font-primary"><i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                </div>
+                                <a href="https://private.babybellyfitness.de/signup/plans" style="background-color: #FF004B ; color: white; border-radius: 5px;" class="button button-3d-ser topmargin-sm" data-class-lg="button-normal" data-class-md="button-normal" data-class-sm="button-small" data-class-xs="button-small" data-class-xxs="button-small">Jetzt loslegen!</a>
+                            </div>
+                        </div>
+                        <div class="oc-item">
+                            <img src="/img/Liz.jpg" alt="Image 7">
+                            <div class="food-content clearfix">
+                                <div class="heading-block nobottomborder nobottommargin">
+                                    <h3 class="nott" style="color: #AE9A64">Lisa</h3>
+                                    <div class="food-info"></div>
+                                    <p class="nobottommargin">
+                                        „BabyBellyFitness würde ich definitiv an jede frischgebackene Mama empfehlen! Die
+                                        Rückbildung- und Sportübungen sind toll und jeder kann sie nachmachen! Trotzdem
+                                        strengt es einen an. Die Videos gehen nicht allzu lang so passt es wirklich super in einen
+                                        Mama-Alltag! Dazu gibt es noch tolle Baby Updates!! Und wer eine kleine Inspiration
+                                        braucht was er denn kochen mag, der findet auch das bei BabyBellyFitness! Es lohnt sich
+                                        einfach total!“<br><br> <strong>Besuche mich auf </strong> <a target="_blank" href="https://www.instagram.com/liz_marie1991">Instagram</a>
+                                    </p>
+                                </div>
+                                <div class="food-price  color fleft font-primary"><i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                </div>
+                                <a href="https://private.babybellyfitness.de/signup/plans" style="background-color: #FF004B ; color: white; border-radius: 5px;" class="button button-3d-ser topmargin-sm" data-class-lg="button-normal" data-class-md="button-normal" data-class-sm="button-small" data-class-xs="button-small" data-class-xxs="button-small">Jetzt loslegen!</a>
+                            </div>
+                        </div>
+                        <div class="oc-item">
+                            <img src="/img/Jana-Klar.jpg" alt="Image 8">
+                            <div class="food-content clearfix">
+                                <div class="heading-block nobottomborder nobottommargin">
+                                    <h3 class="nott" style="color: #AE9A64">Jana K.</h3>
+                                    <div class="food-info"></div>
+                                    <p class="nobottommargin">
+                                        Mit dem BabyBellyFitness-Programm habe ich nach der Geburt meiner Tochter endlich
+                                        meine alte Figur zurück. Ich habe es von Kleidergröße 40 auf 36 geschafft. Die
+                                        Sportübungen sind alle super erklärt und oft auch einfach sehr simpel, dass man sie
+                                        problemlos zu Hause hinbekommt. Woche für Woche kommen neue Übungen, es
+                                        bleibt abwechslungsreich. Die Rezepte, die ich probiert habe, sind auch sehr lecker.
+                                        Natürlich muss man auch nach den 12 Wochen noch weiter Sport machen, 2x in der
+                                        Woche schaffe ich es und fühle mich auch echt fit. Ich kann das Programm jeder frisch
+                                        gebackenen Mama empfehlen.
+                                    </p>
+                                </div>
+                                <div class="food-price  color fleft font-primary"><i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                </div>
+                                <a href="https://private.babybellyfitness.de/signup/plans" style="background-color: #FF004B ; color: white; border-radius: 5px;" class="button button-3d-ser topmargin-sm" data-class-lg="button-normal" data-class-md="button-normal" data-class-sm="button-small" data-class-xs="button-small" data-class-xxs="button-small">Jetzt loslegen!</a>
+                            </div>
+                        </div>
+                        <div class="oc-item">
+                            <img src="/img/Anni.jpg" alt="Image 9">
+                            <div class="food-content clearfix">
+                                <div class="heading-block nobottomborder nobottommargin">
+                                    <h3 class="nott" style="color: #AE9A64">Anni</h3>
+                                    <div class="food-info"></div>
+                                    <p class="nobottommargin">
+                                        Ich bin das erste mal auf BabyBellyFitness hier bei Instagram aufmerksam geworden. Es ist nicht immer leicht als zweifache berufstätige Mutter Zeit für sich und die eigene Fitness zu nehmen. Vor allem aber gestalten sich starre Zeiten von Kursen schwierig. BabyBellyFitness bietet eine tolle Alternative, besonders für frisch gebackene Mamis, die auch nicht immer Zeit fürs Fitnessstudio finden.
+                                        12 Wochen sorgte das Team mit Videos dafür, dass Mamas nach der Geburt wieder fit werden können, ganz bequem und flexibel von zuhause aus.<br><br>
+                                        Begleitend findet eine Rückbildungseinheit statt. Ich bin wirklich rundum zufrieden mit dem Programm und finde es klasse, dass auf die Bedürfnisse frischer Mamis so eingegangen wird.<br><br>
+                                        Mit viel Fachwissen sind die Videos liebevoll gestaltet. Auch an ein paar Ernährungstipps hat das Team gedacht. Danke ihr Lieben, dass ihr auch ein Blick für uns Mamas und unsere Bedürfnisse habt!
+                                    </p>
+                                </div>
+                                <div class="food-price  color fleft font-primary"><i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                    <i class="icon-star3" style="color: #AE9A64"></i>
+                                </div>
+                                <a href="https://private.babybellyfitness.de/signup/plans" style="background-color: #FF004B ; color: white; border-radius: 5px;" class="button button-3d-ser topmargin-sm" data-class-lg="button-normal" data-class-md="button-normal" data-class-sm="button-small" data-class-xs="button-small" data-class-xxs="button-small">Jetzt loslegen!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="full-screen force-full-screen center dark section nopadding nomargin noborder ohidden">
+
+        <div class=" nopadding full-screen force-full-screen video-background-ser-b"
+             style="background-image: url('/img/neu/Trailer-Thumbnail.jpg'); background-size: cover;">
+            <div class="vertical-middle" style="z-index: 2;">
+                <div class="inline-block"><a href="#myModal11" data-lightbox="inline" class="big-video-button bottommargin" data-lightbox="iframe"><i class="icon-line-play"></i></a></div>
+                <div class="emphasis-title divcenter" style="max-width: 450px;">
+                    <h1 id="font-size-home" class="t700 font-body ls1 das-bekommst-du-sers" style="font-size: 28px;">Erlebe BabyBellyFitness</h1>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="video-wrap" style="z-index: 1;">
+                <div class="video-overlay" style="background-color: rgba(0,0,0,0.3);"></div>
+            </div>
+            <div class="container clearfix">
+                <div class="center">
+
+                    <!-- Modal -->
+                    <div class="modal1 mfp-hide" id="myModal11">
+                        <div class="block divcenter" style="background-color: transparent; max-width: 900px;">
+                            <div class="center clearfix home-video-anpassung" style="padding: 100px 20px;">
+                                <iframe id="funnel-manuel-seryan" class="funnel-manuel-seryan" style="width: 889px; height: 500px" src="https://www.youtube.com/embed/LxCbOBTKIB8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="background-image: url('/img/Anna_bild.png'); background-size: cover; background-repeat: no-repeat;">
+        <div class="container clearfix">
+
+            <div class="col_half topmargin-sm nobottommargin ">
+                <img src="/img/Anna1.png" alt="Imac">
+            </div>
+
+            <div class="col_two_fifth topmargin-sm bottommargin-lg col_last">
+
+                <div class="heading-block topmargin">
+                    <h2>BEGINNE JETZT,<br> DAMIT DU DICH WIEDER<br> RUNDUM WOHLFÜHLST</h2>
+                    <span>Einfach 100% GRATIS 7 Tage reinschnuppern</span>
+                </div>
+
+                <p></p>
+                <a href="https://private.babybellyfitness.de/signup/plans" style="background-color: #FF004B; color: white; border-radius: 5px" class="button button-3d-ser" data-class-lg="button-normal" data-class-md="button-normal" data-class-sm="button-large" data-class-xs="button-large" data-class-xxs="button-large">Jetzt loslegen!</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section nomargin">
+        <div class="container clearfix">
+
+            <div class="col-md-4 nobottommargin center" data-animate="bounceIn">
+                <img width="24%" src="/img/t_infovideo-kopieren-2.png">
+                <div class="counter counter-lined"><span data-from="1" data-to="60" data-refresh-interval="6" data-speed="3000"></span>+</div>
+                <h5 style="color:#AE9A64;">FULL HD Videos</h5>
+            </div>
+
+            <div class="col-md-4 nobottommargin center" data-animate="bounceIn" data-delay="200">
+                <img width="24%" src="/img/t_recipes-kopieren-2.png">
+                <div class="counter counter-lined"><span data-from="1" data-to="80" data-refresh-interval="6" data-speed="3000"></span>+</div>
+                <h5 style="color:#AE9A64;">Rezepte</h5>
+            </div>
+
+            <div class="col-md-4 nobottommargin center" data-animate="bounceIn" data-delay="400">
+                <i class="i-plain i-xlarge divcenter nobottommargin icon-line2-layers" style="color:#AE9A64;"></i>
+                <div class="counter counter-lined"><span data-from="1" data-to="40" data-refresh-interval="6" data-speed="3000"></span>+</div>
+                <h5 style="color:#AE9A64;">PDFs</h5>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+{{ end }}

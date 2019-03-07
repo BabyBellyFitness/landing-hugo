@@ -1,0 +1,1921 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Hanlding Updates
+-----------------------------------------------------------------*/
+
+.stripe-loading-indicator .stripe, .stripe-loading-indicator .stripe-loaded {
+    background: #CBA869 !important;
+}
+
+.button-contact-formular
+{
+    background-color: #FF004B !important;
+    color: white !important;
+}
+
+.button-login {
+    color: white;
+    border-color: white;
+    background-color: transparent;
+}
+
+.button-login:hover {
+    border-color: #CBA869;
+}
+
+@media (min-width: 991px) {
+    #primary-menu ul li {
+        margin-left: 10px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    #primary-menu ul li {
+        margin-top: 0px !important;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .no-padding-mobile
+    {
+        padding: 0px !important;
+    }
+}
+
+.heading-block:after {
+    border-top: 2px solid #AE9A64;!important;
+}
+
+.button.button-3d-ser {
+    border-radius: 3px;
+    border-bottom: 3px solid rgba(0,0,0,0.15);
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.button.button-3d-ser:hover {
+    background-color: #FF6A92 !important;
+    opacity: 0.9;
+}
+
+.button.button-3d-seryan {
+    border-radius: 3px;
+    border-bottom: 3px solid rgba(0,0,0,0.15);
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.button.button-3d-seryan:hover {
+    background-color: #B2E8CC !important;
+    opacity: 0.9;
+}
+
+.button.button-3d-seryan3 {
+    border-radius: 3px;
+    border-bottom: 3px solid rgba(0,0,0,0.15);
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.button.button-3d-seryan3:hover {
+    background-color: #cba869 !important;
+    opacity: 0.9;
+}
+
+a.seryan
+{
+    border-bottom: solid;
+    border-width: 1px;
+    color: white;
+    font-size: 13px;
+    font-weight: lighter;
+    position: relative;
+}
+
+a.seryan:hover
+{
+    color: #AE9A64 !important;
+}
+
+.login-rahmen
+{
+    border-radius: 20px !important;
+}
+
+@media (max-width: 991px)
+{
+    .no-width-mobile
+    {
+       height: 668px;!important;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .no-font-size-ser
+    {
+        font-size: 20px !important;
+    }
+}
+
+.amensic-image-wrapper{
+    max-width:90%;
+    height:auto;
+    position: relative;
+    display:block;
+    margin:0 auto;
+}
+.amensic-image-wrapper img{
+    width:100% !important;
+    height:auto !important;
+    display:block;
+}
+
+
+@media (max-width: 991px)
+{
+    .img-seryan
+    {
+        height: 440px !important;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .img-seryan-header
+    {
+        background-position: 35% 0 !important;
+        background-size: 900px !important;
+    }
+    .font-size-seryan
+    {
+        margin-top: -90px!important;
+    }
+    .img-seryan-so-einfach-gehts
+    {
+        background-position: 100% 0 !important;
+        background-size: 850px !important;
+        padding: 150px 0 !important;
+    }
+    .rev-seryan
+    {
+        font-size: 59px!important;
+        line-height: 59px!important;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .video-background-ser
+    {
+        background-position: 85% 0 !important;
+    }
+    .video-background-ser-das
+    {
+        background-position: 76% 0 !important;
+    }
+    .video-background-ser-das-bekommst
+    {
+        background-position: 76% 0 !important;
+    }
+    .video-background-ser-das-bekommst-du
+    {
+        background-position: 10% 0 !important;
+    }
+    .video-background-ser-a
+    {
+        background-position: 65% 0 !important;
+    }
+    .video-background-ser-b
+    {
+        background-position: 80% 0 !important;
+    }
+    .youtube-ser
+    {
+        padding: 10px 10px !important;
+    }
+    .youtube-seryan
+    {
+        width: 300px !important;
+    }
+    .funnel-ser
+    {
+        width: 50% !important;
+    }
+
+    .funnel-size
+    {
+        font-size: 17px!important;
+    }
+    .funnel-card
+    {
+        width: 50%!important;
+    }
+    .img-cart-ser
+    {
+        position: relative;
+        left: 65px !important;
+    }
+    .funnel-manu
+    {
+        font-size: 40px !important;
+    }
+    .funnel-manuel
+    {
+        width: 35% !important;
+    }
+    .funnel-manuel-s
+    {
+        width: 100% !important;
+    }
+    .funnel-manuel-ser
+    {
+        position: relative !important;
+        left: 40px !important;
+    }
+    .funnel-manuel-sery
+    {
+        position: relative !important;
+       right: 25px !important;
+    }
+    .funnel-manuel-seryan
+    {
+        width: 300px !important;
+        height: 200px !important;
+    }
+
+    .manuel-seryan
+    {
+        position: relative !important;
+        top: -15px !important;
+    }
+    .manuel-seryan2
+    {
+        position: relative !important;
+        top: -45px !important;
+    }
+    .manuel-seryan3
+    {
+        display: block!important;
+    }
+    .kenny
+    {
+        height: 494px!important;
+    }
+
+    .kenny-se
+    {
+        font-size: 25px!important;
+    }
+
+    .kenny-ser
+    {
+        font-size: 26px!important;
+    }
+
+    .img-ipad
+    {
+        margin-left: 50px!important;
+    }
+
+    .logo-login
+    {
+        width: 100%!important;
+    }
+
+    .Gutschein-button
+    {
+        right: 55px!important;
+        padding: 0 8px!important;
+    }
+
+    .Checkout-button
+    {
+        right: 40px!important;
+    }
+
+    .funnel-garantie-img
+    {
+        width: 40%!important;
+    }
+
+    .funnel-garantie-img-2
+    {
+        width: 30%!important;
+    }
+
+    .funnel-bullets
+    {
+        margin-left: 0!important;
+    }
+
+    .funnel-iphone-bilder
+    {
+        width: 70%!important;
+    }
+
+    .login-ser
+    {
+        width: 85% !important;
+    }
+
+    .anmelde-button
+    {
+        margin-left: 15px !important;
+    }
+
+    .anmelde-link
+    {
+        margin-right: 30px !important;
+    }
+
+    .warenkorb-bild
+    {
+       max-width: 100% !important;
+    }
+
+    .programm-header
+    {
+        font-size: 15px !important;
+        padding: 0 6px !important;
+    }
+
+    .contact-button
+    {
+        font-size: 10px !important;
+        padding: 0 18px !important;
+    }
+    .bruce-lee
+    {
+        display: none !important;
+    }
+
+    .mobile-anpassung
+    {
+        margin-top: -10px !important;
+    }
+
+    .font-size-twsp
+    {
+        font-size: 35px !important;
+    }
+    .abstand-lmoptin
+    {
+        margin-top: -80px !important;
+        margin-bottom: -80px !important;
+    }
+    .abstand-lmoptin-padd
+    {
+        padding: 20px 0 !important;
+
+    }
+    .das-bekommst-du-sers
+    {
+        font-size: 20px!important;
+
+    }
+    .footer-hp
+    {
+        margin-left: 40px !important;
+    }
+
+    .pricing-programm
+    {
+        top: 0px !important;
+    }
+
+    .video-funnel
+    {
+        width: 420px !important;
+        position: relative!important;
+        right: 70px!important;
+    }
+
+    .video-abstand
+    {
+       padding: 60px 0 !important;
+    }
+
+    .video-abstand-ser
+    {
+        padding: 5px 0 60px !important;
+    }
+    .private-lead-magnet
+    {
+        padding: 0 5px !important;
+    }
+
+    .paket-seiten-bilder
+    {
+        max-width: 100% !important;
+    }
+
+    .paket-seiten-bilder-2
+    {
+        max-width: 60% !important;
+    }
+    .lm-login-logo
+    {
+        width: 45% !important;
+    }
+    .lm-login-text
+    {
+        padding-bottom: 20px !important;
+    }
+
+    .checkout-ser
+    {
+        position: relative;
+        left: 95px !important;
+    }
+
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 1)
+{
+
+    .bruce
+    {
+        font-size: 8px!important;
+        font-weight: bold!important;
+    }
+
+    .mama-meinungen
+    {
+        font-family: 'Crete Round', serif!important;
+        font-weight: lighter!important;
+        font-size: 14px!important;
+    }
+
+    .pricing-ipad
+    {
+        right: 21px!important;
+        padding: 0 10px !important;
+    }
+
+    .pricing-ipad-pro-paket-2
+    {
+        top: -5px !important;
+    }
+
+    .pricing-ipad-klein
+    {
+        right: 23px!important;
+    }
+    .pricing-ipad-so-einfach
+    {
+        top: -7px !important;
+    }
+    .checkout-ser
+    {
+        position: relative;
+        left: 100px !important;
+    }
+    .private-lm-home
+    {
+        width: 60% !important;
+    }
+
+    .private-gift-seiten
+    {
+        width: 60% !important;
+    }
+
+    .private-baby-short
+    {
+        max-width: 100% !important;
+        left: 0px !important;
+    }
+
+    .about-seryan-2
+    {
+        position: relative;
+        left: 345px !important;
+    }
+
+    .about-seryan-3
+    {
+        position: relative;
+        left: 325px !important;
+    }
+
+    .nopadding-ser
+    {
+        padding: 0 0  !important;
+    }
+
+    .lmthankyou-seryan-abstand
+    {
+        margin-bottom: -70px  !important;
+    }
+
+    .private-button-video
+    {
+        position: relative;
+        right: 90px !important;
+        margin-bottom: -40px;
+    }
+
+    .private-video-ser
+    {
+        width: 100% !important;
+    }
+
+    .private-video-ser-2
+    {
+        margin-top: 20px;
+        width: 100% !important;
+    }
+
+    .private-video-ser-ipad
+    {
+        position: relative;
+        right: 90px;
+    }
+
+    .private-video-ser-ipad-2
+    {
+        position: relative;
+        bottom: 44px;
+        left: 100px;
+    }
+
+    .desktop-anpassungen
+    {
+        width: 70%;
+        position: relative;
+        left: 0px !important;
+    }
+
+    .krone-paket-seiten
+    {
+        width: 15% !important;
+    }
+    .twsp-anpassung-27
+    {
+        position: relative!important;
+        bottom: 200px!important;
+    }
+
+    .twsp-anpassung-28
+    {
+        top: -35% !important;
+    }
+}
+
+@media only screen
+and (min-device-width : 700px)
+and (max-device-width : 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 1)
+{
+    .private-seryan
+    {
+        width: 5% !important;
+    }
+    .twsp-mittig
+    {
+        left: 110px !important;
+    }
+
+    .ipad-version
+    {
+        max-width: 700px !important;
+    }
+
+    .ipad-version-paket1
+    {
+        max-width: 90% !important;
+        margin-top: 150px !important;
+    }
+
+    .ipad-version-paket2
+    {
+        max-width: 60% !important;
+    }
+
+    .ipad-version-paket3
+    {
+        max-width: 70% !important;
+    }
+
+    .video-funnel
+    {
+        width: 700px !important;
+        position: relative!important;
+        right: 0px!important;
+    }
+
+    .zeilenumbruch
+    {
+        display: block!important;
+    }
+    .funnel-manuel-seryan
+    {
+        width: 650px !important;
+        height: 400px !important;
+    }
+    .lm-login-ipad
+    {
+        width: 25% !important;
+    }
+
+    .testimonials-landing-ser
+    {
+        margin-top: -280px !important;
+    }
+
+    .checkout-ser
+    {
+        position: relative;
+        left: 76px !important;
+    }
+
+    .private-baby-short
+    {
+        max-width: 100% !important;
+        left: 0px !important;
+    }
+
+    .about-seryan-3
+    {
+        position: relative;
+        left: 250px !important;
+    }
+
+    .private-button-video
+    {
+        position: relative;
+        right: 0px !important;
+    }
+
+    .krone-paket-seiten
+    {
+        width: 20% !important;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .img-seryan-das-bekommst-du-size
+    {
+        font-size: 30px !important;
+    }
+}
+
+@media (max-width: 991px)
+and (orientation: portrait)
+{
+    .img-seryan-das-bekommst-du {
+        background-size: contain !important;
+        padding: 26px 0 !important;
+    }
+
+    .testimonials-landing-seryan
+    {
+        margin: -500px auto !important;
+    }
+
+    .testimonials-landing-ser
+    {
+        margin-top: -480px;
+    }
+}
+
+@media (max-width: 991px)
+and (orientation: portrait)
+{
+    .img-geschichte {
+        background-size: contain !important;
+        padding: 76px 0 !important;
+    }
+
+    .private-nav
+    {
+        margin-top: 0px!important;
+    }
+}
+
+@media (max-width: 991px)
+and (orientation: landscape)
+{
+    .img-geschichte {
+        padding: 100px 0 !important;
+    }
+
+    .funnel-pop-up
+    {
+        max-width: 400px!important;
+    }
+
+    .footer-hp
+    {
+        margin-left: 120px !important;
+    }
+    .private-land
+    {
+        max-width: 10% !important;
+    }
+
+    .funnel-footer-seiten
+    {
+        position: relative !important;
+        left: -90px !important;
+    }
+
+    .funnel-footer-seiten-2
+    {
+        position: relative !important;
+        left: 140px !important;
+        bottom: 70px !important;
+    }
+
+    .testimonials-landing-seryan
+    {
+        margin: -460px auto !important;
+    }
+
+    .testimonials-landing-ser
+    {
+        margin-top: -420px;
+    }
+
+    .checkout-ser
+    {
+        position: relative;
+        left: 155px !important;
+    }
+
+    .about-seryan-3
+    {
+        position: relative;
+        left: 0px !important;
+    }
+
+    .header-private-social
+    {
+        position: relative;
+        left: 135px !important;
+    }
+
+    .funnel-garantie-img-2
+    {
+        width: 20%!important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px)
+and (orientation: landscape)
+{
+    .private-land
+    {
+        max-width: 6% !important;
+    }
+    .about-team-bilder
+    {
+        position: relative;
+        left: 0px !important;
+    }
+}
+
+
+@media (max-width: 991px)
+and (orientation: landscape)
+{
+    .img-seryan-das-bekommst-du {
+        padding: 100px 0 !important;
+    }
+
+    .video-funnel
+    {
+        width: 670px !important;
+        position: relative!important;
+        right: 113px!important;
+    }
+
+    .about-seryan
+    {
+        position: relative;
+        left: 31px !important;
+    }
+    .about-team-bilder
+    {
+        position: relative;
+        left: 0px !important;
+    }
+
+    .lmoptin-seite-seryan-button
+    {
+        padding: 0 32px !important;
+    }
+
+    .private-video-button
+    {
+        position: relative;
+        left: 175px;
+        bottom: 10px;
+    }
+    .private-myaccount
+    {
+        float: none !important;
+        margin-bottom: 3px !important;
+    }
+    .private-myaccount-2
+    {
+        margin-left: 0px !important;
+        float: none !important;
+        margin-bottom: 3px !important;
+    }
+
+    .private-checkout-display
+    {
+        display: none !important;
+    }
+
+    .private-lm-home
+    {
+        width: 60% !important;
+    }
+
+    .private-gift-seiten
+    {
+        width: 60% !important;
+    }
+
+    .private-baby-short
+    {
+        max-width: 100% !important;
+        left: 0px !important;
+    }
+    .home-seite-private
+    {
+        padding: 10px 0 !important;
+    }
+
+    .onetoone-Bild
+    {
+        width: 100% !important;
+    }
+
+    .nopadding-ser
+    {
+        padding: 0 0  !important;
+    }
+
+    .lmthankyou-seryan-abstand
+    {
+        margin-bottom: -70px  !important;
+    }
+
+    .home-video-anpassung
+    {
+        padding: 100px 200px  !important;
+    }
+
+    .private-button-video
+    {
+        position: relative;
+        right: 0px !important;
+    }
+
+    .krone-paket-seiten
+    {
+        width: 30% !important;
+    }
+
+    .bild-anpassung-paket-3
+    {
+        background-position: 35% 0 !important;
+        background-size: 900px !important;
+    }
+
+    .video-anpassen-twsp
+    {
+        height: 591px !important;
+    }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1600px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 1)
+{
+    .private-bereich
+    {
+        width: 100%!important;
+    }
+
+    .ipad-landscape
+    {
+        height: 568px!important;
+    }
+
+    .ipad-landscape-footer
+    {
+        width: 23%!important;
+        margin-right: 70px!important;
+    }
+
+    .ipad-landscape-footer-2
+    {
+        width: 23%!important;
+        margin-right: 85px!important;
+    }
+
+    .ipad-landscape-footer-3
+    {
+        width: 23%!important;
+    }
+
+    .about-kenny
+    {
+       height: 707px!important;
+    }
+
+    .about-ilyasse-bild
+    {
+       height: 777px!important;
+    }
+
+    .ipad-login
+    {
+        position: relative !important;
+        top: 60px !important;
+        right: 87px !important;
+    }
+
+    .ipad-login-2
+    {
+        position: relative !important;
+        left: 75px !important;
+    }
+
+    .king
+    {
+        font-size: 8px!important;
+    }
+    .king-3
+    {
+        background-position: 70%!important;
+    }
+
+    .about-seite
+    {
+        height: 100% !important;
+    }
+
+    .private-lm-home-bild
+    {
+        max-width: 70% !important;
+    }
+
+    .private-gift-seiten
+    {
+        max-width: 70% !important;
+    }
+
+    .footer-abstand-uni
+    {
+        margin-top: -34px !important;
+    }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1600px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 1)
+{
+    .img-geschichte-ipad
+    {
+        padding: 276px 0!important;
+    }
+    .ipad-button
+    {
+        left: 0!important;
+    }
+
+    .img-ipad-bekommst-du
+    {
+        padding: 174px 0!important;
+    }
+
+    .icons-programm
+    {
+        position: relative!important;
+        left: 160px !important;
+    }
+
+    .icons-programm-2
+    {
+        position: relative!important;
+        left: 140px !important;
+    }
+
+    .text-programm-header
+    {
+        text-align: center!important;
+
+    }
+
+    .funnel-ser
+    {
+        width: 100% !important;
+    }
+
+    .funnel-size
+    {
+        font-size: 16px !important;
+    }
+
+    .funnel-manuel
+    {
+       width: 15% !important;
+    }
+
+    .funnel-garantie-img
+    {
+        width: 20%!important;
+    }
+
+    .funnel-garantie-img-2
+    {
+        width: 20%!important;
+    }
+
+    .funnel-garantie-img {
+        width: 15%!important;
+    }
+
+    .anmelde-button
+    {
+        margin-left: 75px !important;
+    }
+
+    .anmelde-link
+    {
+        margin-right: 95px !important;
+    }
+
+    .login-ser
+    {
+        width: 45% !important;
+    }
+
+    .funnel-manuel-s
+    {
+        width: 30% !important;
+    }
+
+    .about-team-bilder
+    {
+        position: relative;
+        left: 330px !important;
+    }
+
+    .private-baby-short
+    {
+        max-width: 100% !important;
+        left: 0px !important;
+    }
+}
+
+@media only screen
+and (min-device-width: 1024px)
+and (max-device-width: 1366px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 1.5) {
+
+    .img-ipad-pro
+    {
+        font-size: 8px!important;
+    }
+    .pricing-ipad-pro
+    {
+        right: 22px!important;
+        padding: 0 10px !important;
+    }
+
+    .pricing-ipad-pro-paket-2
+    {
+        right: 22px!important;
+        padding: 0 10px !important;
+        top: -5px!important;
+    }
+
+    .pricing-ipad-pro-klein
+    {
+        right: 23px!important;
+    }
+
+    .checkout-ser
+    {
+        position: relative;
+        left: 105px !important;
+    }
+
+    .private-lm-home
+    {
+        width: 60% !important;
+    }
+
+    .private-gift-seiten
+    {
+        width: 60% !important;
+    }
+
+    .about-seite-bild-mittig
+    {
+        position: relative;
+        left: 350px !important;
+    }
+
+    .about-seite-bild-mittig-2
+    {
+        position: relative;
+        left: 330px !important;
+    }
+    .private-button-video
+    {
+        position: relative;
+        right: 60px !important;
+    }
+
+    .desktop-anpassungen
+    {
+        width: 70%;
+        position: relative;
+        left: 0px !important;
+    }
+
+    .footer-abstand-uni
+    {
+        margin-top: -34px !important;
+    }
+}
+
+@media only screen
+and (min-device-width: 1030px)
+and (max-device-width: 1366px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 1.5)
+{
+    .about-team-bilder
+    {
+        position: relative;
+        left: 330px !important;
+    }
+
+    .bilder-home-lm
+    {
+        width: 40% !important;
+    }
+
+    .bilder-home-lm-2
+    {
+        max-width: 50% !important;
+    }
+
+    .ipad-pro-private-nice
+    {
+        max-width: 65% !important;
+        position: relative;
+        left: 150px !important;
+
+    }
+
+    .private-button-video
+    {
+        position: relative;
+        right: 110px !important;
+    }
+
+    .footer-abstand-uni
+    {
+        margin-top: -34px !important;
+    }
+}
+
+@media only screen
+and (min-device-width : 700px)
+and (max-device-width : 1023px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 1)
+{
+    .twsp-mittig
+    {
+        left: 110px !important;
+    }
+    .about-seite
+    {
+        height: 100% !important;
+    }
+
+    .about-seryan
+    {
+        position: relative;
+        left: 270px !important;
+    }
+
+    .about-team-bilder
+    {
+        position: relative;
+        left: 250px !important;
+    }
+
+    .private-lm-home
+    {
+        width: 60% !important;
+    }
+
+    .private-gift-seiten
+    {
+        width: 60% !important;
+    }
+
+    .private-baby-short
+    {
+        max-width: 100% !important;
+        left: 0px !important;
+    }
+
+    .header-private-social
+    {
+        position: relative;
+        left: 270px !important;
+    }
+
+    .onetoone-Bild
+    {
+        width: 100% !important;
+    }
+    .nopadding-ser
+    {
+        padding: 0 0  !important;
+    }
+
+    .lmthankyou-seryan-abstand
+    {
+        margin-bottom: -70px  !important;
+    }
+    .home-video-anpassung
+    {
+        padding: 100px 60px  !important;
+    }
+
+    .private-button-video
+    {
+        position: relative;
+        right: 0px !important;
+    }
+
+    .bild-anpassung-paket-3
+    {
+        background-position: 35% 0 !important;
+        background-size: 900px !important;
+    }
+
+}
+
+
+@media (max-width: 640px)
+and (orientation: portrait)
+{
+    .checkout-gutschein
+    {
+        position: relative;
+        left: 116px;
+        bottom: 41px;
+    }
+
+    .checkout-gutschein-2
+    {
+        width: 100%;
+    }
+    .twsp-trennlinie
+    {
+        display: block !important;
+    }
+    .login-button-header
+    {
+        left: 40px !important;
+    }
+    .programm-button-ser
+    {
+        padding: 0 0 !important;
+    }
+    .register-zeile
+    {
+        display: block !important;
+    }
+    .funnel-manuel-sery-2
+    {
+        position: relative !important;
+        right: 65px !important;
+    }
+    .gratis-woche-abstand
+    {
+        padding: 0 0 !important;
+    }
+
+    .gratis-woche-abstand
+    {
+        padding: 0 0 !important;
+    }
+    .you-get-abstand
+    {
+        display: block !important;
+    }
+
+    .register-float
+    {
+        float: left !important;
+        margin-top: 10px !important;
+    }
+
+    .passwort-vergessen-s
+    {
+        position: relative;
+        right: 6px;
+    }
+
+    .passwort-vergessen-ser
+    {
+        padding: 0 8px !important;
+    }
+
+    .about-seryan
+    {
+        position: relative;
+        left: 20px !important;
+    }
+    .about-seryan-ser
+    {
+        position: relative;
+        right: 11px !important;
+    }
+
+    .about-team-bilder
+    {
+        position: relative;
+        left: 0px !important;
+    }
+
+    .passwort-seite-choose
+    {
+        padding: 0 3px!important;
+        font-size: 10px !important;
+    }
+
+    .checkout-seite-seryan
+    {
+        width: 285px !important;
+    }
+
+    .lmoptin-seite-seryan-button
+    {
+        padding: 0 15px !important;
+    }
+
+    .private-video-button
+    {
+        position: relative;
+        left: 96px;
+        bottom: 10px;
+    }
+
+    .private-myaccount
+    {
+        float: none !important;
+        margin-bottom: 3px !important;
+    }
+
+    .private-myaccount-2
+    {
+        margin-left: 0px !important;
+        float: none !important;
+        margin-bottom: 3px !important;
+    }
+
+    .private-checkout-display
+    {
+        display: none !important;
+    }
+
+    .checkout-seryan-gutschein
+    {
+        position: relative;
+        top: 20px;
+        left: -15px;
+    }
+
+    .private-lm-home
+    {
+        width: 100% !important;
+    }
+
+    .private-gift-seiten
+    {
+        width: 45% !important;
+    }
+
+    .private-baby-short
+    {
+        max-width: 100% !important;
+        left: 0px !important;
+    }
+
+    .blog-headline
+    {
+       text-align: center;
+    }
+
+    .checkout-agb-satz
+    {
+        position: relative !important;
+        left: 34px !important;
+    }
+
+    .addons-zeilenumbruch
+    {
+        display: block !important;
+    }
+
+    .about-seryan-3
+    {
+        position: relative;
+        left: 0px !important;
+    }
+
+    .home-seite-private
+    {
+       padding: 10px 0 !important;
+    }
+
+    .contact-button-verschieben
+    {
+        position: relative;
+        right: 4px !important;
+    }
+
+    .login-oben-verschieben-2-ser
+    {
+        padding-top: 7px !important;
+    }
+
+    .lmthankyou-pfeil
+    {
+        display: block !important;
+    }
+
+    .onetoone-Bild
+    {
+        width: 100% !important;
+    }
+
+    .notopmargin-ser
+    {
+        margin-top: 0 !important;
+    }
+
+    .nopadding-ser
+    {
+        padding: 0 0  !important;
+    }
+
+    .lmthankyou-seryan-abstand
+    {
+       margin-bottom: -70px  !important;
+    }
+
+    .home-video-anpassung
+    {
+        padding: 100px 30px  !important;
+    }
+    .private-button-video
+    {
+        position: relative;
+        right: 0px !important;
+    }
+
+    .twsp-abstand-headline
+    {
+        display: block !important;
+    }
+
+    .twsp-hebammen-logo
+    {
+        display: none !important;
+    }
+
+    .twsp-abstand-texte
+    {
+        margin-bottom: -30px !important;
+    }
+
+    .twsp-abstand-texte-2
+    {
+        margin-top: -30px !important;
+    }
+
+    .twsp-abstand-texte-3
+    {
+        margin-bottom: -90px !important;
+    }
+
+    .twsp-abstand-texte-4
+    {
+        margin-top: -50px !important;
+    }
+
+    .twsp-abstand-texte-5
+    {
+        margin-top: -70px !important;
+    }
+
+    .twsp-abstand-texte-5
+    {
+        margin-top: -85px !important;
+    }
+
+    .krone-paket-seiten
+    {
+        width: 25% !important;
+    }
+
+    .bild-anpassung-paket-3
+    {
+        background-position: 65% 0 !important;
+        background-size: 900px !important;
+    }
+
+    .bild-anpassung-paket-4
+    {
+        background-position: 44% 0 !important;
+        background-size: 900px !important;
+    }
+
+    .bild-anpassung-paket-5
+    {
+        padding: 50px 0 !important;
+    }
+
+    .bild-anpassung-paket-6
+    {
+        padding: 30px 0 !important;
+    }
+
+    .bild-anpassung-paket-7
+    {
+        font-size: 17px !important;
+        letter-spacing: 2px;
+    }
+
+    .bild-anpassung-paket-7-2
+    {
+        font-size: 21px !important;
+    }
+
+    .bild-anpassung-paket-8
+    {
+        font-size: 14px !important;
+    }
+
+    .bild-anpassung-paket-9
+    {
+        margin-top: -60px !important;
+    }
+
+    .bild-anpassung-paket-10
+    {
+        padding: 0px 0 !important;
+    }
+
+    .bild-anpassung-paket-11
+    {
+        margin-bottom: -110px !important;
+    }
+
+    .bild-anpassung-paket-12
+    {
+        margin-top: -90px !important;
+    }
+
+    .bild-anpassung-paket-13
+    {
+        margin-bottom: -60px !important;
+    }
+
+    .bild-anpassung-paket-14
+    {
+        margin-top: -40px !important;
+    }
+
+    .bild-anpassung-paket-15
+    {
+        width: 50% !important;
+    }
+
+    .bild-anpassung-paket-16
+    {
+        position: relative;
+        right: 120px;
+    }
+
+    .bild-anpassung-paket-17
+    {
+        position: relative;
+        bottom: 85px;
+        left: 5px;
+    }
+
+    .bild-anpassung-paket-18
+    {
+        position: relative;
+        bottom: 211px;
+        left: 120px;
+    }
+
+    .bild-anpassung-paket-19
+    {
+        margin-bottom: -232px;
+    }
+
+    .bild-anpassung-paket-20
+    {
+        font-size: 15px !important;
+        letter-spacing: 2px;
+    }
+
+    .twsp-anpassung
+    {
+        font-size: 25px !important;
+    }
+
+    .twsp-anpassung-2
+    {
+        font-size: 20px !important;
+    }
+
+    .twsp-anpassung-3
+    {
+        font-size: 30px !important;
+    }
+
+    .twsp-anpassung-4
+    {
+        display: block !important;
+    }
+
+    .twsp-anpassung-5
+    {
+        position: relative;
+        top: -60px;
+    }
+
+    .twsp-anpassung-6
+    {
+        margin-top: -210px !important;
+    }
+
+    .twsp-anpassung-7
+    {
+        margin: 0px 0 !important;
+        padding: 30px 0 !important;
+    }
+
+    .twsp-anpassung-8
+    {
+        position: relative;
+        top: -50px;
+    }
+
+    .twsp-anpassung-9
+    {
+        position: relative;
+        top: -90px;
+    }
+
+    .twsp-anpassung-10
+    {
+        position: relative;
+        top: -100px;
+    }
+
+    .twsp-anpassung-11
+    {
+        position: relative;
+        top: -170px;
+    }
+
+    .twsp-anpassung-12
+    {
+        position: relative;
+        top: -190px;
+    }
+
+    .twsp-anpassung-13
+    {
+        padding: 0px 0!important;
+    }
+
+    .twsp-anpassung-14
+    {
+        margin-top: 0px !important;
+    }
+
+    .twsp-anpassung-15
+    {
+        position: relative;
+        top: -285px;
+    }
+
+    .twsp-anpassung-16
+    {
+        position: relative;
+        top: -310px;
+    }
+
+    .twsp-anpassung-17
+    {
+        position: relative;
+        top: -340px;
+    }
+
+    .twsp-anpassung-18
+    {
+        position: relative;
+        top: -100px;
+    }
+
+    .twsp-anpassung-19
+    {
+        position: relative;
+        top: -460px;
+    }
+
+    .twsp-anpassung-20
+    {
+        position: relative;
+        top: -408px;
+    }
+
+    .twsp-anpassung-21
+    {
+        margin-top: 0px !important;
+    }
+
+    .video-funnel-twsp
+    {
+        width: 420px !important;
+        position: relative!important;
+        right: 45px!important;
+    }
+
+
+    .twsp-anpassung-22
+    {
+        margin-top: 10px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .twsp-anpassung-23
+    {
+        position: relative;
+        top: 30px;
+    }
+
+    .twsp-anpassung-24
+    {
+        height: 480px !important;
+        margin: 30px 0 !important;
+    }
+
+    .twsp-anpassung-25
+    {
+        padding-top: 100px !important;
+    }
+
+    .twsp-anpassung-26
+    {
+        margin-top: -65px !important;
+    }
+
+    .twsp-anpassung-27
+    {
+        width: 420px !important;
+        position: relative!important;
+        right: 70px!important;
+    }
+
+    .twsp-anpassung-28
+    {
+        margin-top: 20px !important;
+        font-size: 22px !important;
+    }
+
+    .twsp-anpassung-29
+    {
+        margin-top: 0px !important;
+    }
+
+    .you-get-font-size
+    {
+       padding: 66px !important;
+    }
+
+    .you-get-font-size-2
+    {
+        font-size: 15px !important;
+    }
+
+    .you-get-padding
+    {
+        padding: 0 0 !important;
+    }
+
+    .you-get-top-margin
+    {
+        margin-top: -110px !important;
+    }
+
+    .footer-mobile
+    {
+        display: block !important;
+    }
+
+    .footer-mobile-2
+    {
+        display: none !important;
+    }
+
+    .personaltraining-Darmstadt
+    {
+        background-size: contain !important;
+        padding: 40px 0 !important;
+    }
+
+    .personaltraining-Darmstadt-headline
+    {
+        font-size: 30px !important;
+    }
+
+}
+
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-resolution: 192dpi)
+{
+    .ipad-pro-private-nice
+    {
+        max-width: 65% !important;
+        position: relative;
+        left: 150px !important;
+
+    }
+
+    .desktop-anpassungen
+    {
+        position: relative;
+        left: 0px !important;
+    }
+}
+
+@media screen
+and (min-device-width: 1600px)
+{
+    .desktop-anpassungen
+    {
+        width: 70% !important;
+        position: relative;
+        left: 210px;
+    }
+
+    .desktop-anpassungen-2
+    {
+        margin-top: 60px !important;
+    }
+
+    .desktop-anpassungen-3
+    {
+        margin-right: -252px;
+    }
+
+    .desktop-anpassungen-4
+    {
+        margin-left: -90px;
+    }
+}
